@@ -26,7 +26,9 @@
         * {
             box-sizing: border-box;
         }
-
+        .modal{
+            color: black;
+        }
         body {
             background-color: #17202A;
             color: #FBFCFC;
@@ -299,7 +301,12 @@
                                   <a class="dropdown-item" href="#">Something else here</a>
                                 </div>
                               </div>
-                            <button class="btn btn-primary">suggest</button>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs1">
+                                suggest
+                              </button>
+                              
+                              <!-- Modal -->
+                              
                         </div>
                     </div>
                 </div>
@@ -538,6 +545,27 @@
             </li>
         </ul>
     </div>
+    <!-- //modals -->
+    <div class="modal fade" id="cs1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Civil Semister 1</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h6>Enter name of the subject you think should be added</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //modals -->
     <div>
         <div class="center_col" style="height: 3rem; color: #FBFCFC;  background-color: black;">
             Made with 💞 by VinnovateIT.
