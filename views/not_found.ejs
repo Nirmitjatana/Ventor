@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        .center_col {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center_row {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            background-color: #17202A;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .main_box {
+            height: 95vh;
+        }
+
+        .image_not_found {
+            height: 30vh;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+            width: 30vh;
+            border-radius: 50%;
+        }
+
+        .main_heading {
+            font-size: 6rem;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main_box center_col">
+        <img class="image_not_found" src="<%= notFound %>" alt="">
+    </div>
+
+</body>
+
+</html>

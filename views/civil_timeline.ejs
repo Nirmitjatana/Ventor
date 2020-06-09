@@ -32,6 +32,20 @@
             color: #FBFCFC;
         }
 
+        .center_col {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center_row {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+        }
+
         .timeline {
             list-style: none;
             padding: 20px 0 20px;
@@ -227,9 +241,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="text-align: center;">
         <div class="page-header">
-            <h1 id="timeline" style="text-align: center;">Information Technology</h1>
+            <h1 id="timeline" class="m-5">Civil Engineering</h1>
         </div>
         <ul class="timeline">
             <li class="timeline-left">
@@ -523,6 +537,11 @@
                 </div>
             </li>
         </ul>
+    </div>
+    <div>
+        <div class="center_col" style="height: 3rem; color: #FBFCFC;  background-color: black;">
+            Made with 💞 by VinnovateIT.
+        </div>
     </div>
 </body>
 <script
