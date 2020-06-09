@@ -20,7 +20,7 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-
+    
 
     <style>
         * {
@@ -30,6 +30,20 @@
         body {
             background-color: #17202A;
             color: #FBFCFC;
+        }
+
+        .center_col {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center_row {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
         }
 
         .timeline {
@@ -184,9 +198,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="text-align: center;">
         <div class="page-header">
-            <h1 id="timeline">Information Technology</h1>
+            <h1 id="timeline" class="m-5">Mechanical Engineering</h1>
         </div>
         <ul class="timeline">
             <li>
@@ -270,18 +284,6 @@
                             Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i
                             pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
                         <hr>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-                                <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </li>
@@ -315,6 +317,11 @@
                 </div>
             </li>
         </ul>
+    </div>
+    <div>
+        <div class="center_col" style="height: 3rem; color: #FBFCFC;  background-color: black;">
+            Made with 💞 by VinnovateIT.
+        </div>
     </div>
 </body>
 
