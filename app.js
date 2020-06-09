@@ -6,8 +6,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 
-app.get("/home", function (req, res) {
-    res.render("landing_page.ejs");
+app.get("/", function (req, res) {
+    res.render("landing_page.ejs",{
+        "logo":"/assets/VinnovateIT-shape.png"
+    });
 });
 
 app.get("/it", function (req, res) {
