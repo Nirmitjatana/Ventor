@@ -19,8 +19,8 @@ app.post('/civilrequest', function (req, res) {
 
 
     var mailOptions = {
-        from: 'greetyourgirlfriend@gmail.com',
-        to: "wimpywarlord@gmail.com",
+        from: 'wimpywarlord@gmail.com',
+        to: "greetyourgirlfriend@gmail.com",
         subject: "CIVIL SUGGESTION",
         text: JSON.stringify(req.body),
     };
@@ -47,8 +47,8 @@ app.post('/cserequest', function (req, res) {
 
 
     var mailOptions = {
-        from: 'greetyourgirlfriend@gmail.com',
-        to: "wimpywarlord@gmail.com",
+        from: 'wimpywarlord@gmail.com',
+        to: "greetyourgirlfriend@gmail.com",
         subject: "CSE SUGGESTION",
         text: JSON.stringify(req.body),
     };
@@ -75,8 +75,8 @@ app.post('/ecerequest', function (req, res) {
 
 
     var mailOptions = {
-        from: 'greetyourgirlfriend@gmail.com',
-        to: "wimpywarlord@gmail.com",
+        from: 'wimpywarlord@gmail.com',
+        to: "greetyourgirlfriend@gmail.com",
         subject: "ECE SUGGESTION",
         text: JSON.stringify(req.body),
     };
@@ -103,8 +103,8 @@ app.post('/eeerequest', function (req, res) {
 
 
     var mailOptions = {
-        from: 'greetyourgirlfriend@gmail.com',
-        to: "wimpywarlord@gmail.com",
+        from: 'wimpywarlord@gmail.com',
+        to: "greetyourgirlfriend@gmail.com",
         subject: "EEE SUGGESTION",
         text: JSON.stringify(req.body),
     };
@@ -131,8 +131,8 @@ app.post('/itrequest', function (req, res) {
 
 
     var mailOptions = {
-        from: 'greetyourgirlfriend@gmail.com',
-        to: "wimpywarlord@gmail.com",
+        from: 'wimpywarlord@gmail.com',
+        to: "greetyourgirlfriend@gmail.com",
         subject: "IT SUGGESTION",
         text: JSON.stringify(req.body),
     };
@@ -159,8 +159,8 @@ app.post('/mechrequest', function (req, res) {
 
 
     var mailOptions = {
-        from: 'greetyourgirlfriend@gmail.com',
-        to: "wimpywarlord@gmail.com",
+        from: 'wimpywarlord@gmail.com',
+        to: "greetyourgirlfriend@gmail.com",
         subject: "MECH SUGGESTION",
         text: JSON.stringify(req.body),
     };
