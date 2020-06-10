@@ -26,7 +26,9 @@
         * {
             box-sizing: border-box;
         }
-
+        .modal{
+            color: black;
+        }
         body {
             background-color: #17202A;
             color: #FBFCFC;
@@ -63,9 +65,24 @@
             margin-left: -1.5px;
         }
 
-        .timeline>li {
+        .timeline li {
             margin-bottom: 20px;
             position: relative;
+            
+        }
+
+        .timeline-panel{
+            transform-origin: top right;
+            transform-style: preserve-3D;
+            transform: rotateY(-90deg);
+            transition: all 2s ease-in-out;
+        }
+
+        .timeline-inverted .timeline-panel{
+            transform-origin: top left;
+            transform-style: preserve-3D;
+            transition: all 2s ease-in-out;
+            transform: rotateY(90deg);
         }
 
         .timeline>li:before,
@@ -193,6 +210,34 @@
         .timeline-body>p+p {
             margin-top: 5px;
         }
+        .timeline-list{
+            list-style: none;
+            padding: 0;
+        }
+        .timeline-list li{
+            padding: 5px;
+            background-color: rgb(40, 43, 46);
+            border-radius: 10px;
+            margin-bottom: 4px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .timeline-list li span:nth-child(1){
+            margin-right: 10px;
+        }
+        .timeline-footer{
+            display: flex;
+            width: 100%;
+            align-items: center;
+        }
+        .timeline-footer >button,.dropdown{
+            width: 100%;
+            margin: 5px;
+        }
+        .dropdown button{
+            padding: 5px;
+            width: 100%;
+        }
     </style>
 
 </head>
@@ -200,23 +245,64 @@
 <body>
     <div class="container" style="text-align: center;">
         <div class="page-header">
-            <h1 id="timeline" class="m-5">Electronics and Communication</h1>
+            <h1 id="timeline" class="m-5">ECE Engineering</h1>
         </div>
         <ul class="timeline">
-            <li>
+            <li class="timeline-left">
                 <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Stay ahead of the
-                                curve.</small></p>
+                        <h4 class="timeline-title">Semister 2</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
                     </div>
                     <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                            divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi
-                            eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i
-                            pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <ul class="timeline-list">
+                            <li>
+                                <span>CHY1701</span>
+                                <span>Engineering Chemistry</span>
+                            </li>
+                            <li>
+                                <span>CSE1002 </span>
+                                <span>Problem Solving and Object Oriented Programming</span>
+                            </li>
+                            <li>
+                                <span>ECE1033 </span>
+                                <span>Basics of Sensors and Wearable Technology </span>
+                            </li>
+                            <li>
+                                <span>ECE2028 </span>
+                                <span>Analog Circuits</span>
+                            </li>
+                            <li>
+                                <span>ENG1011 </span>
+                                <span>English for Engineers</span>
+                            </li>
+                            <li>
+                                <span>MAT2001 </span>
+                                <span>Statistics for Engineers</span>
+                            </li>
+                            <li>
+                                <span>MAT2002  </span>
+                                <span>Applications of Differential and Difference Equations</span>
+                            </li>
+                        </ul>
+                        <div class="timeline-footer">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Filter
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                                </div>
+                              </div>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs1">
+                                suggest
+                              </button>
+                              
+                              <!-- Modal -->
+                              
+                        </div>
                     </div>
                 </div>
             </li>
@@ -224,80 +310,101 @@
                 <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        <h4 class="timeline-title">Semister 3</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
                     </div>
                     <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                            divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi
-                            eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i
-                            pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no
-                            mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus
-                            a, posuere ut mi. Ut scelerisque neque et turpis posuere
-                            pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum
-                            justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus
-                            velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+                        <ul class="timeline-list">
+                            <li>
+                                <span>ECE1017 </span>
+                                <span>Electromagnetic Field Theory and Transmission Lines</span>
+                            </li>
+                            <li>
+                                <span>ECE1018</span>
+                                <span>Signal Analysis and Processing</span>
+                            </li>
+                            <li>
+                                <span>ECE2026 </span>
+                                <span>Digital Circuit Design</span>
+                            </li>
+                            <li>
+                                <span>ECE2032 </span>
+                                <span>Wearable Devices and its Applications</span>
+                            </li>
+                            <li>
+                                <span>ECE3042 </span>
+                                <span>Data Acquisition Techniques </span>
+                            </li>
+                        </ul>
+                        <div class="timeline-footer">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Filter
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                                </div>
+                              </div>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs2">
+                                suggest
+                              </button>
+                        </div>
                     </div>
                 </div>
             </li>
-            <li>
-                <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                            divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi
-                            eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i
-                            pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                            divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi
-                            eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i
-                            pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
+            <li class="timeline-left">
                 <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        <h4 class="timeline-title">Semister 4</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
                     </div>
                     <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                            divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi
-                            eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i
-                            pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <hr>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                            divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi
-                            eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i
-                            pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <ul class="timeline-list">
+                            <li>
+                                <span>CSE2003 </span>
+                                <span>Data Structures and Algorithms </span>
+                            </li>
+                            <li>
+                                <span>ECE2010 </span>
+                                <span>Control Systems</span>
+                            </li>
+                            <li>
+                                <span>ECE2024 </span>
+                                <span>Principles of Communication </span>
+                            </li>
+                            <li>
+                                <span>ECE3029 </span>
+                                <span>Graphical System Design for Communication</span>
+                            </li>
+                            <li>
+                                <span>ECE3031 </span>
+                                <span>Microcontroller and Embedded Systems</span>
+                            </li>
+                            <li>
+                                <span>ECE3032 </span>
+                                <span>Sensor Technology</span>
+                            </li>
+                            <li>
+                                <span>PHY1999  </span>
+                                <span>Introduction to Innovative Projects</span>
+                            </li>
+                        </ul>
+                        <div class="timeline-footer">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Filter
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                                </div>
+                              </div>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs3">
+                                suggest
+                              </button>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -305,24 +412,253 @@
                 <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        <h4 class="timeline-title">Semister 5</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
                     </div>
                     <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                            divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi
-                            eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i
-                            pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <ul class="timeline-list">
+                            <li>
+                                <span>ECE3013</span>
+                                <span>Linear Integrated Circuits
+                                </span>
+                            </li>
+                            <li>
+                                <span>ECE4001 </span>
+                                <span>Digital Communication Systems</span>
+                            </li>
+                            <li>
+                                <span>ECE3003</span>
+                                <span>Microcontroller and its Application</span>
+                            </li>
+                            <li>
+                                <span>MAT3004</span>
+                                <span>Applied Linear Algebra</span>
+                            </li>
+                            <li>
+                                <span>ECE1008</span>
+                                <span>Electronics Hardware Trouble Shooting</span>
+                            </li>
+                            <li>
+                                <span>ECE2004</span>
+                                <span>Transmission Lines and Waveguides</span>
+                            </li>
+                        </ul>
+                        <div class="timeline-footer">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Filter
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                                </div>
+                              </div>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs4">
+                                suggest
+                              </button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-left">
+                <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Semister 6</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+                    </div>
+                    <div class="timeline-body">
+                        <ul class="timeline-list">
+                            <li>
+                                <span>ECE2008</span>
+                                <span>Robotics and Automation</span>
+                            </li>
+                            <li>
+                                <span>ECE3002</span>
+                                <span>VLSI System Design</span>
+                            </li>
+                            <li>
+                                <span>ECE3999</span>
+                                <span>Technical Answers for Real World Problems (TARP)</span>
+                            </li>
+                            <li>
+                                <span>MGT1022</span>
+                                <span>Lean Start-up Management</span>
+                            </li>
+                            <li>
+                                <span>ECE3999</span>
+                                <span>TARP</span>
+                            </li>
+                            <li>
+                                <span>MGT1022</span>
+                                <span>LSM</span>
+                            </li>
+                        </ul>
+                        <div class="timeline-footer">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Filter
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                                </div>
+                              </div>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs5">
+                                suggest
+                              </button>
+                        </div>
                     </div>
                 </div>
             </li>
         </ul>
     </div>
+    <!-- //modals -->
+    <div class="modal fade" id="cs1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ECE Semister 2</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h6>Enter name of the subject you think should be added</h6>
+              <textarea style="width: 100%;" placeholder="course code --- course name"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cs2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ECE Semister 3</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h6>Enter name of the subject you think should be added</h6>
+              <textarea style="width: 100%;" placeholder="course code --- course name"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cs3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ECE Semister 4</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h6>Enter name of the subject you think should be added</h6>
+              <textarea style="width: 100%;" placeholder="course code --- course name"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cs4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ECE Semister 5</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h6>Enter name of the subject you think should be added</h6>
+              <textarea style="width: 100%;" placeholder="course code --- course name"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cs5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ECE Semister 6</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h6>Enter name of the subject you think should be added</h6>
+              <textarea style="width: 100%;" placeholder="course code --- course name"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //modals -->
     <div>
         <div class="center_col" style="height: 3rem; color: #FBFCFC;  background-color: black;">
             Made with 💞 by VinnovateIT.
         </div>
     </div>
 </body>
-
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script>
+    var scroll=window.requestAnimationFrame;
+    var left=document.querySelectorAll(".timeline-left .timeline-panel");
+    var right=document.querySelectorAll(".timeline-inverted .timeline-panel");
+    function loop(){
+        left.forEach(function(element){
+            if(isElementInViewport(element)){
+                element.style.transform="rotateY(0deg)";
+            }
+        })
+        right.forEach(function(element){
+            if(isElementInViewport(element)){
+                element.style.transform="rotateY(0deg)";
+            }
+        })
+        scroll(loop);
+    }
+    loop();
+    function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
+</script>
 </html>
