@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167856909-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167856909-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -20,15 +30,25 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-
-
+    <meta charset="UTF-8">
+    <meta name="description" content="A perfect reference timeline for your journey in VIT.">
+    <meta name="keywords" content="VIT, VIT Vellore , vit college , kshitij , vinnovateit , wimpywarlord">
+    <meta name="author" content="VinnovateIT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<%=title_logo%>" type="image/x-icon">
+    <meta property="og:title" content="Ventor" />
+    <meta property="og:description" content="A perfect reference timeline for your journey in VIT." />
+    <meta property="og:image" content="<%=title_logo%>" />
+    <title>Ventor</title>
     <style>
         * {
             box-sizing: border-box;
         }
-        .modal{
+
+        .modal {
             color: black;
         }
+
         body {
             background-color: #17202A;
             color: #FBFCFC;
@@ -68,17 +88,17 @@
         .timeline li {
             margin-bottom: 20px;
             position: relative;
-            
+
         }
 
-        .timeline-panel{
+        .timeline-panel {
             transform-origin: top right;
             transform-style: preserve-3D;
             transform: rotateY(-90deg);
             transition: all 2s ease-in-out;
         }
 
-        .timeline-inverted .timeline-panel{
+        .timeline-inverted .timeline-panel {
             transform-origin: top left;
             transform-style: preserve-3D;
             transition: all 2s ease-in-out;
@@ -210,11 +230,13 @@
         .timeline-body>p+p {
             margin-top: 5px;
         }
-        .timeline-list{
+
+        .timeline-list {
             list-style: none;
             padding: 0;
         }
-        .timeline-list li{
+
+        .timeline-list li {
             padding: 5px;
             background-color: rgb(40, 43, 46);
             border-radius: 10px;
@@ -222,19 +244,24 @@
             display: flex;
             flex-wrap: wrap;
         }
-        .timeline-list li span:nth-child(1){
+
+        .timeline-list li span:nth-child(1) {
             margin-right: 10px;
         }
-        .timeline-footer{
+
+        .timeline-footer {
             display: flex;
             width: 100%;
             align-items: center;
         }
-        .timeline-footer >button,.dropdown{
+
+        .timeline-footer>button,
+        .dropdown {
             width: 100%;
             margin: 5px;
         }
-        .dropdown button{
+
+        .dropdown button {
             padding: 5px;
             width: 100%;
         }
@@ -252,8 +279,9 @@
                 <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Semister 2</h4>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+                        <h4 class="timeline-title">Semester 2</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+
+                                seniors</small></p>
                     </div>
                     <div class="timeline-body">
                         <ul class="timeline-list">
@@ -283,21 +311,22 @@
                             </li>
                         </ul>
                         <div class="timeline-footer">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Filter
+                            <!-- <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Filter
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
-                                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                                    <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                                    <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
                                 </div>
-                              </div>
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs1">
+                            </div> -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs1">
                                 suggest
-                              </button>
-                              
-                              <!-- Modal -->
-                              
+                            </button>
+
+                            <!-- Modal -->
+
                         </div>
                     </div>
                 </div>
@@ -306,8 +335,9 @@
                 <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Semister 3</h4>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+                        <h4 class="timeline-title">Semester 3</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+
+                                seniors</small></p>
                     </div>
                     <div class="timeline-body">
                         <ul class="timeline-list">
@@ -341,18 +371,19 @@
                             </li>
                         </ul>
                         <div class="timeline-footer">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Filter
+                            <!-- <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Filter
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
-                                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                                    <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                                    <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
                                 </div>
-                              </div>
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs2">
+                            </div> -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs2">
                                 suggest
-                              </button>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -361,8 +392,9 @@
                 <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Semister 4</h4>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+                        <h4 class="timeline-title">Semester 4</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+
+                                seniors</small></p>
                     </div>
                     <div class="timeline-body">
                         <ul class="timeline-list">
@@ -396,18 +428,19 @@
                             </li>
                         </ul>
                         <div class="timeline-footer">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Filter
+                            <!-- <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Filter
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
-                                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                                    <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                                    <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
                                 </div>
-                              </div>
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs3">
+                            </div> -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs3">
                                 suggest
-                              </button>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -416,8 +449,9 @@
                 <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Semister 5</h4>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+                        <h4 class="timeline-title">Semester 5</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+
+                                seniors</small></p>
                     </div>
                     <div class="timeline-body">
                         <ul class="timeline-list">
@@ -435,7 +469,7 @@
                             </li>
                             <li>
                                 <span>CSE4001</span>
-                                <span>Parallel and Distributed  Computing</span>
+                                <span>Parallel and Distributed Computing</span>
                             </li>
                             <li>
                                 <span>CSE4003</span>
@@ -447,18 +481,19 @@
                             </li>
                         </ul>
                         <div class="timeline-footer">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Filter
+                            <!-- <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Filter
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
-                                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                                    <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                                    <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
                                 </div>
-                              </div>
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs4">
+                            </div> -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs4">
                                 suggest
-                              </button>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -467,8 +502,9 @@
                 <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Semister 6</h4>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+                        <h4 class="timeline-title">Semester 6</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+
+                                seniors</small></p>
                     </div>
                     <div class="timeline-body">
                         <ul class="timeline-list">
@@ -506,18 +542,19 @@
                             </li>
                         </ul>
                         <div class="timeline-footer">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Filter
+                            <!-- <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Filter
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">GPA ORIENTED</a>
-                                  <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
+                                    <a class="dropdown-item" href="#">GPA ORIENTED</a>
+                                    <a class="dropdown-item" href="#">CREDITS ORIENTED</a>
                                 </div>
-                              </div>
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs5">
+                            </div> -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cs5">
                                 suggest
-                              </button>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -527,149 +564,163 @@
     <!-- //modals -->
     <div class="modal fade" id="cs1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Cse Semister 2</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cse Semester 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Enter name of the subject you think should be added</h6>
+                    <form action="/cserequest" method="POST">
+                        <textarea style="width: 100%;" name="cse-sem2-suggestion"
+                            placeholder="course code --- course name"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
-              <h6>Enter name of the subject you think should be added</h6>
-              <textarea style="width: 100%;" placeholder="course code --- course name"></textarea>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="modal fade" id="cs2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="cs2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Cse Semister 3</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cse Semester 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Enter name of the subject you think should be added</h6>
+                    <form action="/cserequest" method="POST">
+                        <textarea style="width: 100%;" name="cse-sem3-suggestion"
+                            placeholder="course code --- course name"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
-              <h6>Enter name of the subject you think should be added</h6>
-              <textarea style="width: 100%;" placeholder="course code --- course name"></textarea>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="modal fade" id="cs3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="cs3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Cse Semister 4</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cse Semester 4</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Enter name of the subject you think should be added</h6>
+                    <form action="/cserequest" method="POST">
+                        <textarea style="width: 100%;" name="cse-sem4-suggestion"
+                            placeholder="course code --- course name"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
-              <h6>Enter name of the subject you think should be added</h6>
-              <textarea style="width: 100%;" placeholder="course code --- course name"></textarea>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="modal fade" id="cs4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="cs4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Cse Semister 5</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cse Semester 5</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Enter name of the subject you think should be added</h6>
+                    <form action="/cserequest" method="POST">
+                        <textarea style="width: 100%;" name="cse-sem5-suggestion"
+                            placeholder="course code --- course name"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
-              <h6>Enter name of the subject you think should be added</h6>
-              <textarea style="width: 100%;" placeholder="course code --- course name"></textarea>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="modal fade" id="cs5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="cs5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Cse Semister 6</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cse Semester 6</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Enter name of the subject you think should be added</h6>
+                    <form action="/cserequest" method="POST">
+                        <textarea style="width: 100%;" name="cse-sem6-suggestion"
+                            placeholder="course code --- course name"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
-              <h6>Enter name of the subject you think should be added</h6>
-              <textarea style="width: 100%;" placeholder="course code --- course name"></textarea>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- //modals -->
+    </div>
+    <!-- //modals -->
     <div>
         <div class="center_col" style="height: 3rem; color: #FBFCFC;  background-color: black;">
             Made with 💞 by VinnovateIT.
         </div>
     </div>
 </body>
-<script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
 <script>
-    var scroll=window.requestAnimationFrame;
-    var left=document.querySelectorAll(".timeline-left .timeline-panel");
-    var right=document.querySelectorAll(".timeline-inverted .timeline-panel");
-    function loop(){
-        left.forEach(function(element){
-            if(isElementInViewport(element)){
-                element.style.transform="rotateY(0deg)";
+    var scroll = window.requestAnimationFrame;
+    var left = document.querySelectorAll(".timeline-left .timeline-panel");
+    var right = document.querySelectorAll(".timeline-inverted .timeline-panel");
+    function loop() {
+        left.forEach(function (element) {
+            if (isElementInViewport(element)) {
+                element.style.transform = "rotateY(0deg)";
             }
         })
-        right.forEach(function(element){
-            if(isElementInViewport(element)){
-                element.style.transform="rotateY(0deg)";
+        right.forEach(function (element) {
+            if (isElementInViewport(element)) {
+                element.style.transform = "rotateY(0deg)";
             }
         })
         scroll(loop);
     }
     loop();
     function isElementInViewport(el) {
-  // special bonus for those using jQuery
-  if (typeof jQuery === "function" && el instanceof jQuery) {
-    el = el[0];
-  }
-  var rect = el.getBoundingClientRect();
-  return (
-    (rect.top <= 0
-      && rect.bottom >= 0)
-    ||
-    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-    ||
-    (rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-  );
-}
+        // special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
+        }
+        var rect = el.getBoundingClientRect();
+        return (
+            (rect.top <= 0
+                && rect.bottom >= 0)
+            ||
+            (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+            ||
+            (rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+        );
+    }
 </script>
+
 </html>
