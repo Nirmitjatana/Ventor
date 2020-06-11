@@ -266,45 +266,49 @@
       width: 100%;
     }
 
-    @media only screen and (max-width: 500px){
-     
+    @media only screen and (max-width: 500px) {
+
       .timeline:before {
-      top: 0;
-      bottom: 0;
-      position: absolute;
-      content: " ";
-      width: 3px;
-      background-color: #eeeeee;
-      left: 100%;
-      margin-left: -1.5px;
-    }
-    .timeline>li>.timeline-panel{
-      width: 96%;
-    }
-    .timeline>li>.timeline-badge{
-      left:100%
-    }
-    .timeline-inverted .timeline-panel {
-      transform-origin: top right;
-      transform-style: preserve-3D;
-      transform: rotateY(-90deg);
-      transition: all 2s ease-in-out;
-    }
-    .timeline>li.timeline-inverted>.timeline-panel {
-      float: left;
-    }
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: #eeeeee;
+        left: 100%;
+        margin-left: -1.5px;
+      }
 
-    .timeline>li.timeline-inverted>.timeline-panel:before {
-      border-left-width: 0;
-      border-right-width: 15px;
-      right: -15px;
-    }
+      .timeline>li>.timeline-panel {
+        width: 96%;
+      }
 
-    .timeline>li.timeline-inverted>.timeline-panel:after {
-      border-left-width: 0;
-      border-right-width: 14px;
-      right: -14px;
-    }
+      .timeline>li>.timeline-badge {
+        left: 100%
+      }
+
+      .timeline-inverted .timeline-panel {
+        transform-origin: top right;
+        transform-style: preserve-3D;
+        transform: rotateY(-90deg);
+        transition: all 2s ease-in-out;
+      }
+
+      .timeline>li.timeline-inverted>.timeline-panel {
+        float: left;
+      }
+
+      .timeline>li.timeline-inverted>.timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        right: -15px;
+      }
+
+      .timeline>li.timeline-inverted>.timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        right: -14px;
+      }
     }
   </style>
 
@@ -321,7 +325,8 @@
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 2</h4>
-            <p id="change1"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 47+ seniors</small></p>
+            <p id="change1"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 47+
+                seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -380,7 +385,8 @@
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 3</h4>
-            <p id="change2"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 34+ seniors</small></p>
+            <p id="change2"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 34+
+                seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -461,7 +467,8 @@
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 5</h4>
-            <p id="change4"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 41+ seniors</small></p>
+            <p id="change4"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 41+
+                seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -704,13 +711,27 @@
     );
   }
 
-  function randomNumber(min, max) {  
-    return Math.floor(Math.random() * (max - min) + min); 
+  function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
   }
 
   // for (let i = 1; i <=5; i++) {
   //   $("#change"+i.toString()).text('Suggested by'+randomNumber(36,59)+'+ seniors')
   // }
 </script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/5ee258969e5f69442290617f/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
 
 </html>
