@@ -4,7 +4,32 @@ var nodemailer = require("nodemailer");
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
+var courses = require('./subjects.json');
 
+
+app.get('/subjectrequest1',(req,res)=>{
+    res.status(200).json(courses);
+})
+
+app.get('/subjectrequest2',(req,res)=>{
+    res.status(200).json(courses);
+})
+
+app.get('/subjectrequest3',(req,res)=>{
+    res.status(200).json(courses);
+})
+
+app.get('/subjectrequest4',(req,res)=>{
+    res.status(200).json(courses);
+})
+
+app.get('/subjectrequest5',(req,res)=>{
+    res.status(200).json(courses);
+})
+
+app.get('/subjectrequest6',(req,res)=>{
+    res.status(200).json(courses);
+})
 
 app.post('/civilrequest', function (req, res) {
     console.log(req.body);
