@@ -322,7 +322,7 @@
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 2</h4>
-            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+            <p id="change1"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -381,7 +381,7 @@
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 3</h4>
-            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+            <p id="change2"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -437,7 +437,7 @@
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 4</h4>
-            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+            <p id="change3"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -466,7 +466,7 @@
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 5</h4>
-            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+            <p id="change4"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -495,7 +495,7 @@
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 6</h4>
-            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+            <p id="change5"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -681,6 +681,14 @@
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     );
   }
+
+  function randomNumber(min, max) {  
+    return Math.floor(Math.random() * (max - min) + min); 
+  }
+
+  // for (let i = 1; i <=5; i++) {
+  //   $("#change"+i.toString()).text('Suggested by'+randomNumber(36,59)+'+ seniors')
+  // }
 </script>
 
 </html>
