@@ -266,6 +266,46 @@
       padding: 5px;
       width: 100%;
     }
+    @media only screen and (max-width: 500px){
+     
+     .timeline:before {
+     top: 0;
+     bottom: 0;
+     position: absolute;
+     content: " ";
+     width: 3px;
+     background-color: #eeeeee;
+     left: 100%;
+     margin-left: -1.5px;
+   }
+   .timeline>li>.timeline-panel{
+     width: 96%;
+   }
+   .timeline>li>.timeline-badge{
+     left:100%
+   }
+   .timeline-inverted .timeline-panel {
+     transform-origin: top right;
+     transform-style: preserve-3D;
+     transform: rotateY(-90deg);
+     transition: all 2s ease-in-out;
+   }
+   .timeline>li.timeline-inverted>.timeline-panel {
+     float: left;
+   }
+
+   .timeline>li.timeline-inverted>.timeline-panel:before {
+     border-left-width: 0;
+     border-right-width: 15px;
+     right: -15px;
+   }
+
+   .timeline>li.timeline-inverted>.timeline-panel:after {
+     border-left-width: 0;
+     border-right-width: 14px;
+     right: -14px;
+   }
+   }
   </style>
 
 </head>
