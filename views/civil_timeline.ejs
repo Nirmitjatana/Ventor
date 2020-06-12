@@ -30,6 +30,11 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 
+
+  <!-- SWEET ALERT -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
   <meta charset="UTF-8">
   <meta name="description" content="A perfect reference timeline for your journey in VIT.">
   <meta name="keywords" content="VIT, VIT Vellore , vit college , kshitij , vinnovateit , wimpywarlord">
@@ -377,7 +382,12 @@
       color: #ffffff;
     }
   </style>
-
+  <script>
+    function showalert() {
+      alert("Your response has been recorded. We are evaluating it!")
+      // swal("Hello world!");
+    }
+  </script>
 </head>
 
 <body>
@@ -643,7 +653,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button onclick="showalert()" type="submit" class="btn btn-primary">Save changes</button>
           </form>
         </div>
       </div>
@@ -670,7 +680,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button onclick="showalert()" type="submit" class="btn btn-primary">Save changes</button>
           </form>
         </div>
       </div>
@@ -697,7 +707,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button onclick="showalert()" type="submit" class="btn btn-primary">Save changes</button>
           </form>
         </div>
       </div>
@@ -724,7 +734,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button onclick="showalert()" type="submit" class="btn btn-primary">Save changes</button>
           </form>
         </div>
       </div>
@@ -751,7 +761,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button onclick="showalert()" type="submit" class="btn btn-primary">Save changes</button>
           </form>
         </div>
       </div>
