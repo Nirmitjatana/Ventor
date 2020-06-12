@@ -266,121 +266,127 @@
       padding: 5px;
       width: 100%;
     }
-    @media only screen and (max-width: 500px){
 
-     .timeline:before {
-     top: 0;
-     bottom: 0;
-     position: absolute;
-     content: " ";
-     width: 3px;
-     background-color: #eeeeee;
-     left: 100%;
-     margin-left: -1.5px;
-   }
-   .timeline>li>.timeline-panel{
-     width: 96%;
-   }
-   .timeline>li>.timeline-badge{
-     left:100%
-   }
-   .timeline-inverted .timeline-panel {
-     transform-origin: top right;
-     transform-style: preserve-3D;
-     transform: rotateY(-90deg);
-     transition: all 2s ease-in-out;
-   }
-   .timeline>li.timeline-inverted>.timeline-panel {
-     float: left;
-   }
+    @media only screen and (max-width: 500px) {
 
-   .timeline>li.timeline-inverted>.timeline-panel:before {
-     border-left-width: 0;
-     border-right-width: 15px;
-     right: -15px;
-   }
+      .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: #eeeeee;
+        left: 100%;
+        margin-left: -1.5px;
+      }
 
-   .timeline>li.timeline-inverted>.timeline-panel:after {
-     border-left-width: 0;
-     border-right-width: 14px;
-     right: -14px;
-   }
-   }
-   html {
- scroll-behavior: smooth;
-         }
+      .timeline>li>.timeline-panel {
+        width: 96%;
+      }
 
-         #myBtn {
-         display: none;
-         position: fixed;
-         bottom: 40px;
-         right: 30px;
-         z-index: 99;
-         height: 50px;
-         }
+      .timeline>li>.timeline-badge {
+        left: 100%
+      }
 
-         #myBtn img{
-           height: 100%;
-         }
-  
-         .autocomplete {
-  position: relative;
-  display: inline-block;
-}
+      .timeline-inverted .timeline-panel {
+        transform-origin: top right;
+        transform-style: preserve-3D;
+        transform: rotateY(-90deg);
+        transition: all 2s ease-in-out;
+      }
 
-input {
-  border: 1px solid transparent;
-  background-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
-}
+      .timeline>li.timeline-inverted>.timeline-panel {
+        float: left;
+      }
 
-input[type=text] {
-  background-color: #f1f1f1;
-  width: 100%;
-}
+      .timeline>li.timeline-inverted>.timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        right: -15px;
+      }
+
+      .timeline>li.timeline-inverted>.timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        right: -14px;
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 40px;
+      right: 30px;
+      z-index: 99;
+      height: 50px;
+    }
+
+    #myBtn img {
+      height: 100%;
+    }
+
+    .autocomplete {
+      position: relative;
+      display: inline-block;
+    }
+
+    input {
+      border: 1px solid transparent;
+      background-color: #f1f1f1;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    input[type=text] {
+      background-color: #f1f1f1;
+      width: 100%;
+    }
 
 
-.autocomplete-items {
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
-  z-index: 99;
-  /*position the autocomplete items to be the same width as the container:*/
-  top: 100%;
-  left: 0;
-  right: 0;
-}
+    .autocomplete-items {
+      position: absolute;
+      border: 1px solid #d4d4d4;
+      border-bottom: none;
+      border-top: none;
+      z-index: 99;
+      /*position the autocomplete items to be the same width as the container:*/
+      top: 100%;
+      left: 0;
+      right: 0;
+    }
 
-.autocomplete-items div {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #fff; 
-  border-bottom: 1px solid #d4d4d4; 
-}
+    .autocomplete-items div {
+      padding: 10px;
+      cursor: pointer;
+      background-color: #fff;
+      border-bottom: 1px solid #d4d4d4;
+    }
 
-/*when hovering an item:*/
-.autocomplete-items div:hover {
-  background-color: #e9e9e9; 
-}
+    /*when hovering an item:*/
+    .autocomplete-items div:hover {
+      background-color: #e9e9e9;
+    }
 
-/*when navigating through the items using the arrow keys:*/
-.autocomplete-active {
-  background-color: DodgerBlue !important; 
-  color: #ffffff; 
-}
-
+    /*when navigating through the items using the arrow keys:*/
+    .autocomplete-active {
+      background-color: DodgerBlue !important;
+      color: #ffffff;
+    }
   </style>
 
 </head>
 
 <body>
-  <a href="/" style="position: absolute;top: 10px;left: 10px;z-index: 99;"><img src="https://image.flaticon.com/icons/svg/833/833557.svg" alt="" height="50px"></a> 
-<div style="position: absolute;top: 0;" class="main" id="section1">
+  <a href="/" style="position: absolute;top: 10px;left: 10px;z-index: 99;"><img
+      src="https://image.flaticon.com/icons/svg/833/833557.svg" alt="" height="50px"></a>
+  <div style="position: absolute;top: 0;" class="main" id="section1">
   </div>
-  <a id="myBtn" href="#section1" ><img src="https://image.flaticon.com/icons/svg/833/833580.svg" alt="Go to top"></a>
-  
+  <a id="myBtn" href="#section1"><img src="https://image.flaticon.com/icons/svg/833/833580.svg" alt="Go to top"></a>
+
   <div class="container" style="text-align: center;">
     <div class="page-header">
       <h1 id="timeline" class="m-5">ECE Engineering</h1>
@@ -391,7 +397,8 @@ input[type=text] {
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 2</h4>
-            <p id="change1"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+            <p id="change1"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 37+
+                seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -450,7 +457,8 @@ input[type=text] {
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 3</h4>
-            <p id="change2"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+            <p id="change2"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 45+
+                seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -502,7 +510,8 @@ input[type=text] {
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 4</h4>
-            <p id="change3"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+            <p id="change3"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 65+
+                seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -551,7 +560,8 @@ input[type=text] {
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 5</h4>
-            <p id="change4"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+            <p id="change4"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 72+
+                seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -600,7 +610,8 @@ input[type=text] {
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Semester 6</h4>
-            <p id="change5"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 120+ seniors</small></p>
+            <p id="change5"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Suggested by 24+
+                seniors</small></p>
           </div>
           <div class="timeline-body">
             <ul class="timeline-list">
@@ -656,7 +667,10 @@ input[type=text] {
           <form action="/ecerequest" method="POST">
             <div class="autocomplete w-100">
               <input id="autoCourse1" type="text" name="ece-sem2-suggestion" placeholder="course code-course name">
-          </div>
+              <small style="font-size: 0.6rem;">*your suggestions will be stored in our database , and will be analysed
+                using sophisticated
+                algorithms.</small>
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -680,7 +694,10 @@ input[type=text] {
           <form action="/ecerequest" method="POST">
             <div class="autocomplete w-100">
               <input id="autoCourse2" type="text" name="ece-sem3-suggestion" placeholder="course code-course name">
-          </div>
+              <small style="font-size: 0.6rem;">*your suggestions will be stored in our database , and will be analysed
+                using sophisticated
+                algorithms.</small>
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -704,7 +721,10 @@ input[type=text] {
           <form action="/ecerequest" method="POST">
             <div class="autocomplete w-100">
               <input id="autoCourse3" type="text" name="ece-sem4-suggestion" placeholder="course code-course name">
-          </div>
+              <small style="font-size: 0.6rem;">*your suggestions will be stored in our database , and will be analysed
+                using sophisticated
+                algorithms.</small>
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -728,7 +748,10 @@ input[type=text] {
           <form action="/ecerequest" method="POST">
             <div class="autocomplete w-100">
               <input id="autoCourse4" type="text" name="ece-sem5-suggestion" placeholder="course code-course name">
-          </div>
+              <small style="font-size: 0.6rem;">*your suggestions will be stored in our database , and will be analysed
+                using sophisticated
+                algorithms.</small>
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -752,7 +775,10 @@ input[type=text] {
           <form action="/ecerequest" method="POST">
             <div class="autocomplete w-100">
               <input id="autoCourse5" type="text" name="ece-sem6-suggestion" placeholder="course code-course name">
-          </div>
+              <small style="font-size: 0.6rem;">*your suggestions will be stored in our database , and will be analysed
+                using sophisticated
+                algorithms.</small>
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -773,22 +799,22 @@ input[type=text] {
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
-  <script>
-    //For Go to top button
-    var mybutton = document.getElementById("myBtn");
+<script>
+  //For Go to top button
+  var mybutton = document.getElementById("myBtn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
     }
-    </script>
-    
+  }
+</script>
+
 <script>
   var scroll = window.requestAnimationFrame;
   var left = document.querySelectorAll(".timeline-left .timeline-panel");
@@ -825,124 +851,125 @@ input[type=text] {
     );
   }
 
-  function randomNumber(min, max) {
-      return Math.floor(Math.random() * (max - min) + min);
+  // function randomNumber(min, max) {
+  //     return Math.floor(Math.random() * (max - min) + min);
+  //   }
+
+  //   for (let i = 1; i <= 5; i++) {
+  //     $("#change" + i.toString()).text('Suggested by ' + randomNumber(47, 59).toString() + '+ seniors')
+  //   }
+
+  // for autocomplete feature 
+  function autocomplete(inp, arr) {
+    var currentFocus;
+    inp.addEventListener("input", function (e) {
+      var a, b, i, val = this.value;
+      closeAllLists();
+      if (!val) { return false; }
+      currentFocus = -1;
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      this.parentNode.appendChild(a);
+
+
+      for (i = 0; i < arr.length; i++) {
+
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+
+          b = document.createElement("DIV");
+
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+
+          b.addEventListener("click", function (e) {
+
+            inp.value = this.getElementsByTagName("input")[0].value;
+
+            closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+    });
+
+    inp.addEventListener("keydown", function (e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+
+        currentFocus++;
+
+        addActive(x);
+      } else if (e.keyCode == 38) {
+        currentFocus--;
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        e.preventDefault();
+        if (currentFocus > -1) {
+          if (x) x[currentFocus].click();
+        }
+      }
+    });
+    function addActive(x) {
+      if (!x) return false;
+
+      removeActive(x);
+      if (currentFocus >= x.length) currentFocus = 0;
+      if (currentFocus < 0) currentFocus = (x.length - 1);
+
+      x[currentFocus].classList.add("autocomplete-active");
+    }
+    function removeActive(x) {
+
+      for (var i = 0; i < x.length; i++) {
+        x[i].classList.remove("autocomplete-active");
+      }
+    }
+    function closeAllLists(elmnt) {
+
+      var x = document.getElementsByClassName("autocomplete-items");
+      for (var i = 0; i < x.length; i++) {
+        if (elmnt != x[i] && elmnt != inp) {
+          x[i].parentNode.removeChild(x[i]);
+        }
+      }
     }
 
-    for (let i = 1; i <= 5; i++) {
-      $("#change" + i.toString()).text('Suggested by ' + randomNumber(47, 59).toString() + '+ seniors')
-    }
+    document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+    });
+  }
 
-    // for autocomplete feature 
-    function autocomplete(inp, arr) {
-                var currentFocus;
-                inp.addEventListener("input", function (e) {
-                    var a, b, i, val = this.value;
-                    closeAllLists();
-                    if (!val) { return false; }
-                    currentFocus = -1;
-                    a = document.createElement("DIV");
-                    a.setAttribute("id", this.id + "autocomplete-list");
-                    a.setAttribute("class", "autocomplete-items");
-                    this.parentNode.appendChild(a);
+  var courses = []
+
+  axios.get('/subjectrequest3')
+    .then(data => {
+      for (let i = 0; i < data.data.length; i++) {
+        courses.push(data.data[i].code + ' ' + data.data[i].title)
+      }
+    })
+    .catch(err => console.log(err));
 
 
-                    for (i = 0; i < arr.length; i++) {
-
-                        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-
-                            b = document.createElement("DIV");
-
-                            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-                            b.innerHTML += arr[i].substr(val.length);
-
-                            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-
-                            b.addEventListener("click", function (e) {
-
-                                inp.value = this.getElementsByTagName("input")[0].value;
-
-                                closeAllLists();
-                            });
-                            a.appendChild(b);
-                        }
-                    }
-                });
-
-                inp.addEventListener("keydown", function (e) {
-                    var x = document.getElementById(this.id + "autocomplete-list");
-                    if (x) x = x.getElementsByTagName("div");
-                    if (e.keyCode == 40) {
-
-                        currentFocus++;
-
-                        addActive(x);
-                    } else if (e.keyCode == 38) {
-                        currentFocus--;
-                        addActive(x);
-                    } else if (e.keyCode == 13) {
-                        e.preventDefault();
-                        if (currentFocus > -1) {
-                            if (x) x[currentFocus].click();
-                        }
-                    }
-                });
-                function addActive(x) {
-                    if (!x) return false;
-
-                    removeActive(x);
-                    if (currentFocus >= x.length) currentFocus = 0;
-                    if (currentFocus < 0) currentFocus = (x.length - 1);
-
-                    x[currentFocus].classList.add("autocomplete-active");
-                }
-                function removeActive(x) {
-
-                    for (var i = 0; i < x.length; i++) {
-                        x[i].classList.remove("autocomplete-active");
-                    }
-                }
-                function closeAllLists(elmnt) {
-
-                    var x = document.getElementsByClassName("autocomplete-items");
-                    for (var i = 0; i < x.length; i++) {
-                        if (elmnt != x[i] && elmnt != inp) {
-                            x[i].parentNode.removeChild(x[i]);
-                        }
-                    }
-                }
-
-                document.addEventListener("click", function (e) {
-                    closeAllLists(e.target);
-                });
-            }
-
-            var courses = []
-
-            axios.get('/subjectrequest3')
-                .then(data => {
-                    for (let i = 0; i < data.data.length; i++) {
-                        courses.push(data.data[i].code + ' ' + data.data[i].title)
-                    }
-                })
-                .catch(err => console.log(err));
-
-            
-            for (let i = 1; i <= 5; i++) {
-                autocomplete(document.getElementById("autoCourse"+i.toString()), courses);
-            }
+  for (let i = 1; i <= 5; i++) {
+    autocomplete(document.getElementById("autoCourse" + i.toString()), courses);
+  }
 </script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5ee258969e5f69442290617f/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/5ee258969e5f69442290617f/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
 </script>
 <!--End of Tawk.to Script-->
+
 </html>
