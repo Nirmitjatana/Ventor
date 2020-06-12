@@ -250,6 +250,57 @@
       justify-content: center;
       align-items: center;
     }
+
+    .new-popup{
+      display: inline-block;
+      position: relative;
+      bottom:13px;
+      background-color: #fff;
+      color:rgb(14, 104, 179);
+      width:35px;
+      padding:3px;
+      font-size:11px;
+    }
+
+    .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  font-size:12px;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  text-transform: initial;
+}
   </style>
 
 
@@ -259,7 +310,14 @@
   <header>
     <ul class="nav">
       <li><a style="padding: 0.6rem;" href="#">HOME</a></li>
-      <li><a style="padding: 0.6rem;" target="_blank" href="http://the-wall-e.herokuapp.com/">WALLE</a></li>
+      <li><a style="padding: 0.6rem;" target="_blank" href="http://the-wall-e.herokuapp.com/">
+        
+        <div class="tooltip inln">
+          WALLE <div class="new-popup">New</div>
+          <span class="tooltiptext">More Projects by VinnovateIT</span>
+        </div>
+
+      </a></li>
       <li><a style="padding: 0.6rem;" target="_blank" href="https://vinnovateit.com/#contact">CONTACT</a></li>
     </ul>
 
