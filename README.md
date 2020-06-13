@@ -1,5 +1,7 @@
 # V innovate IT 👽
-![Follow Github](https://img.shields.io/github/followers/wimpywarlord?color=%2317202A&label=Follow%20wimpywarlord&logo=github&style=for-the-badge) ![Follow Twitter](https://img.shields.io/twitter/follow/kshitij_dhyani?color=%2317202A&label=Follow%20kshitij_dhyani&logo=twitter&style=for-the-badge) ![GitHub stars](https://img.shields.io/github/stars/wimpywarlord/Github_readme_template?color=%2317202A&label=STARS%20%F0%9F%8C%9F&logo=github&style=for-the-badge) 
+![Forks](https://img.shields.io/github/forks/vinnovateit/Ventor?logo=github&style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/vinnovateit/Ventor?label=STARS%20%F0%9F%92%A5&logo=github&style=for-the-badge)
+![Twitter](https://img.shields.io/twitter/follow/v_innovate_it?logo=twitter&style=for-the-badge)
 
 **We are here to change the game.🐙** 
 
